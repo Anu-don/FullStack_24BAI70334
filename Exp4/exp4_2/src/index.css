@@ -1,0 +1,66 @@
+/* Coder Theme Styles */
+body {
+  margin: 0;
+  background-color: #0a0a0a; /* deep dark */
+  color: #c0ff00; /* green accent */
+  font-family: 'Courier New', Courier, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #1a1a1a;
+  color: #c0ff00;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+.coder-header {
+  background: linear-gradient(135deg, #001f00, #004400);
+  padding: 20px;
+  text-align: center;
+  color: #c0ff00;
+  font-size: 1.8rem;
+  font-weight: bold;
+  border-bottom: 2px solid #003300;
+}
+
+.coder-footer {
+  background: #001f00;
+  color: #c0ff00;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border-top: 2px solid #003300;
+}
+
+.coder-code-area {
+  background: #111111;
+  padding: 15px;
+  border-radius: 8px;
+  margin: 10px 0;
+  box-shadow: 0 2px 8px rgba(0, 255, 0, 0.2);
+}
+
+button {
+  background-color: #003300;
+  color: #c0ff00;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #005500;
+}
+
+input, textarea {
+  background-color: #1a1a1a;
+  color: #c0ff00;
+  border: 1px solid #003300;
+  border-radius: 4px;
+}
