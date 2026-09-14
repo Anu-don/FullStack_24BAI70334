@@ -1,0 +1,305 @@
+body {
+  margin: 0;
+  background: #f4f6f9;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #2c3e50;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* ---------- navbar ---------- */
+.app-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 24px;
+  background: white;
+  border-bottom: 1px solid #e1e5ea;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.nav-brand {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.nav-link {
+  color: #444;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.nav-link:hover {
+  color: #2c3e50;
+}
+
+.nav-link.btn-register {
+  background: #3498db;
+  color: white;
+  padding: 7px 14px;
+  border-radius: 5px;
+}
+
+.nav-link.btn-register:hover {
+  background: #2980b9;
+}
+
+.user-name {
+  font-size: 14px;
+  color: #555;
+}
+
+.btn-logout {
+  background: #e74c3c;
+  color: white;
+  border: none;
+  padding: 7px 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-logout:hover {
+  background: #c0392b;
+}
+
+.role-badge {
+  font-size: 12px;
+  font-weight: bold;
+  padding: 4px 10px;
+  border-radius: 999px;
+  color: white;
+}
+
+.role-badge.role-admin { background: #8e44ad; }
+.role-badge.role-user { background: #3498db; }
+.role-badge.role-employee { background: #27ae60; }
+
+/* ---------- auth card (Login / Register) ---------- */
+.auth-card {
+  width: 100%;
+  max-width: 380px;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+}
+
+.auth-header h2 {
+  margin: 0 0 6px;
+}
+
+.auth-subtitle {
+  margin: 0 0 18px;
+  color: #666;
+  font-size: 14px;
+}
+
+.error-banner {
+  background: #fdecea;
+  color: #c0392b;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 13.5px;
+  margin-bottom: 14px;
+}
+
+.success-banner {
+  background: #eafaf1;
+  color: #1e8449;
+  padding: 10px 12px;
+  border-radius: 5px;
+  font-size: 13.5px;
+  margin-bottom: 14px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 13.5px;
+  color: #444;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14.5px;
+  box-sizing: border-box;
+}
+
+.btn-primary {
+  width: 100%;
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 5px;
+  font-size: 14.5px;
+  cursor: pointer;
+}
+
+.btn-primary:hover:not(:disabled) {
+  background: #2980b9;
+}
+
+.btn-primary:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+
+.btn-secondary {
+  background: #ecf0f1;
+  border: 1px solid #ccc;
+  color: #333;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-secondary:hover {
+  background: #dfe4e6;
+}
+
+.btn-sm {
+  padding: 6px 12px;
+  font-size: 12.5px;
+}
+
+.sandbox-info {
+  margin-top: 18px;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  border: 1px solid #e1e5ea;
+}
+
+.sandbox-info p {
+  margin: 0 0 10px;
+  font-size: 13px;
+  color: #666;
+}
+
+.demo-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.auth-footer {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 13.5px;
+  color: #555;
+}
+
+.auth-footer a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.auth-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ---------- role dashboards ---------- */
+.dash-card {
+  width: 100%;
+  max-width: 480px;
+  background: white;
+  padding: 28px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid #999;
+  height: fit-content;
+}
+
+.dash-role-tag {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 14px;
+}
+
+.dash-card h2 {
+  margin: 0 0 4px;
+}
+
+.dash-email {
+  margin: 0 0 20px;
+  color: #666;
+  font-size: 14px;
+}
+
+.dash-section h3 {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.dash-list {
+  margin: 0;
+  padding-left: 20px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.8;
+}
+
+/* Admin: purple, authoritative */
+.dash-card.role-admin {
+  border-top-color: #8e44ad;
+}
+.dash-card.role-admin .dash-role-tag {
+  background: #8e44ad;
+}
+
+/* User: blue, friendly */
+.dash-card.role-user {
+  border-top-color: #3498db;
+}
+.dash-card.role-user .dash-role-tag {
+  background: #3498db;
+}
+
+/* Employee: green, corporate */
+.dash-card.role-employee {
+  border-top-color: #27ae60;
+}
+.dash-card.role-employee .dash-role-tag {
+  background: #27ae60;
+}
+
+/* ---------- mobile ---------- */
+@media (max-width: 480px) {
+  .app-main {
+    padding: 24px 14px;
+  }
+}
