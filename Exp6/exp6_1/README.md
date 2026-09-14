@@ -20,7 +20,6 @@ To implement pagination and sorting in a REST API using Spring Boot and display 
 
 ## Software Requirements
 
-|
 - Java 17+
 - Spring Boot 3.x
 - React.js 18+
