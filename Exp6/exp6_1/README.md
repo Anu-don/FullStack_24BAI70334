@@ -21,158 +21,39 @@ To implement pagination and sorting in a REST API using Spring Boot and display 
 ## Software Requirements
 
 |
-Software
-
-|
-
-Version
-
-|
-| --- | --- |
-|
-
-Java
-
-|
-
-17+
-
-|
-|
-
-Spring Boot
-
-|
-
-3.x
-
-|
-|
-
-React
-
-|
-
-18+
-
-|
-|
-
-MySQL
-
-|
-
-8.x
-
-|
-|
-
-Maven
-
-|
-
-3.9+
-
-|
-|
-
-Swagger UI
-
-|
-
-OpenAPI
-
-|
+- Java 17+
+- Spring Boot 3.x
+- React.js 18+
+- MySQL 8.0+
+- Maven 3.9+
+- Swagger UI (OpenAPI 3)
 
 ## Technologies Used
 
-* Spring Boot
-
-* Spring Data JPA
-
-* React.js
-
-* MySQL
-
-* Swagger UI
-
-* REST API
+- Spring Boot
+- Spring Data JPA
+- React.js
+- MySQL
+- Maven
+- Swagger UI
+- REST API
 
 ## API Endpoints
 
-|
-Method
-
-|
-
-Endpoint
-
-|
-
-Description
-
-|
-| --- | --- | --- |
-|
-
-GET
-
-|
-
-`/api/products`
-
-|
-
-Get paginated products
-
-|
-|
-
-GET
-
-|
-
-`/api/products?page=0&size=5`
-
-|
-
-Pagination
-
-|
-|
-
-GET
-
-|
-
-`/api/products?sortBy=id&direction=asc`
-
-|
-
-Sorting
-
-|
+- **GET** `/api/products` → Retrieve paginated products
+- **GET** `/api/products?page=0&size=5` → Fetch products page-wise
+- **GET** `/api/products?sortBy=id&direction=asc` → Sort products in ascending order
 
 ## Project Structure
 
-```
+```text
 pagination-sorting-api/
-│── backend/
-│   ├── controller/
-│   ├── entity/
-│   ├── repository/
-│   ├── service/
-│   └── application.properties
 │
+├── backend/
 ├── frontend/
-│   ├── src/
-│   ├── components/
-│   └── App.js
-│
 ├── screenshots/
 │   ├── dashboard.png
 │   └── swagger-ui.png
-│
 └── README.md
 ```
 
