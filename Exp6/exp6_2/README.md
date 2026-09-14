@@ -65,11 +65,10 @@ screenshots/
 
 Display it in README:
 
-```md
 ![Backend Optimization Dashboard](backend-dashboard.png)
 
 ![Swagger APi CRUL](image-1.png)
-```
+
 
 ## Learning Outcome
 - Learned how JOIN FETCH removes the N+1 query issue.
