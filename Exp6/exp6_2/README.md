@@ -66,7 +66,7 @@ screenshots/
 Display it in README:
 
 ```md
-![Backend Optimization Dashboard](screenshots/backend-dashboard.png)
+![Backend Optimization Dashboard](backend-dashboard.png)
 
 ![Swagger APi CRUL](image-1.png)
 ```
