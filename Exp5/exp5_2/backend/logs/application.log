@@ -1,0 +1,84 @@
+2026-08-22 07:52:20.760 [main] INFO  [correlationId=] c.example.restapi.RestApiApplication - Starting RestApiApplication using Java 26.0.2 with PID 26040 (D:\Documents\college_work\fullStack\exp1_5_2\backend\target\classes started by Anurag in D:\Documents\college_work\fullStack\exp1_5_2\backend)
+2026-08-22 07:52:20.786 [main] DEBUG [correlationId=] c.example.restapi.RestApiApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-08-22 07:52:20.790 [main] INFO  [correlationId=] c.example.restapi.RestApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-22 07:52:21.633 [main] INFO  [correlationId=] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-22 07:52:21.723 [main] INFO  [correlationId=] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 75 ms. Found 1 JPA repository interface.
+2026-08-22 07:52:22.306 [main] INFO  [correlationId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-22 07:52:22.323 [main] INFO  [correlationId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-22 07:52:22.323 [main] INFO  [correlationId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-08-22 07:52:22.394 [main] INFO  [correlationId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-08-22 07:52:22.394 [main] INFO  [correlationId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1525 ms
+2026-08-22 07:52:22.437 [main] INFO  [correlationId=] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-22 07:52:22.642 [main] INFO  [correlationId=] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:productdb user=SA
+2026-08-22 07:52:22.644 [main] INFO  [correlationId=] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-22 07:52:22.663 [main] INFO  [correlationId=] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:productdb'
+2026-08-22 07:52:22.846 [main] INFO  [correlationId=] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-22 07:52:22.953 [main] INFO  [correlationId=] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-08-22 07:52:23.029 [main] INFO  [correlationId=] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-22 07:52:23.773 [main] INFO  [correlationId=] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-22 07:52:25.402 [main] INFO  [correlationId=] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-22 07:52:25.515 [main] INFO  [correlationId=] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-22 07:52:25.970 [main] WARN  [correlationId=] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-22 07:52:26.619 [main] INFO  [correlationId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-08-22 07:52:26.656 [main] INFO  [correlationId=] c.example.restapi.RestApiApplication - Started RestApiApplication in 6.451 seconds (process running for 6.872)
+2026-08-22 07:52:45.267 [http-nio-8080-exec-1] INFO  [correlationId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-08-22 07:52:45.268 [http-nio-8080-exec-1] INFO  [correlationId=] o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-08-22 07:52:45.272 [http-nio-8080-exec-1] INFO  [correlationId=] o.s.web.servlet.DispatcherServlet - Completed initialization in 4 ms
+2026-08-22 07:52:45.336 [http-nio-8080-exec-1] INFO  [correlationId=c83144e2-6381-4bc6-8a01-4c9477054651] c.e.r.filter.CorrelationIdFilter - --> GET /api/products (client=0:0:0:0:0:0:0:1)
+2026-08-22 07:52:45.521 [http-nio-8080-exec-1] DEBUG [correlationId=c83144e2-6381-4bc6-8a01-4c9477054651] c.e.r.service.ProductServiceImpl - Fetching all products
+2026-08-22 07:52:46.549 [http-nio-8080-exec-1] DEBUG [correlationId=c83144e2-6381-4bc6-8a01-4c9477054651] c.e.r.service.ProductServiceImpl - Fetched 0 products
+2026-08-22 07:52:46.878 [http-nio-8080-exec-1] INFO  [correlationId=c83144e2-6381-4bc6-8a01-4c9477054651] c.e.r.filter.CorrelationIdFilter - <-- GET /api/products status=200 (1541 ms)
+2026-08-22 07:52:46.883 [http-nio-8080-exec-2] INFO  [correlationId=9c334f80-34db-4dab-88ee-6b50ab7027ef] c.e.r.filter.CorrelationIdFilter - --> GET /api/products (client=0:0:0:0:0:0:0:1)
+2026-08-22 07:52:46.886 [http-nio-8080-exec-2] DEBUG [correlationId=9c334f80-34db-4dab-88ee-6b50ab7027ef] c.e.r.service.ProductServiceImpl - Fetching all products
+2026-08-22 07:52:46.891 [http-nio-8080-exec-2] DEBUG [correlationId=9c334f80-34db-4dab-88ee-6b50ab7027ef] c.e.r.service.ProductServiceImpl - Fetched 0 products
+2026-08-22 07:52:46.895 [http-nio-8080-exec-2] INFO  [correlationId=9c334f80-34db-4dab-88ee-6b50ab7027ef] c.e.r.filter.CorrelationIdFilter - <-- GET /api/products status=200 (12 ms)
+2026-08-22 07:52:54.100 [http-nio-8080-exec-3] INFO  [correlationId=20e333f6-2cb3-4627-b6a8-8acd39f27df4] c.e.r.filter.CorrelationIdFilter - --> POST /api/products (client=0:0:0:0:0:0:0:1)
+2026-08-22 07:52:54.310 [http-nio-8080-exec-3] INFO  [correlationId=20e333f6-2cb3-4627-b6a8-8acd39f27df4] c.e.r.service.ProductServiceImpl - Creating product: name=Laptop
+2026-08-22 07:52:54.406 [http-nio-8080-exec-3] INFO  [correlationId=20e333f6-2cb3-4627-b6a8-8acd39f27df4] c.e.r.service.ProductServiceImpl - Product created successfully: id=1
+2026-08-22 07:52:54.421 [http-nio-8080-exec-3] INFO  [correlationId=20e333f6-2cb3-4627-b6a8-8acd39f27df4] c.e.r.filter.CorrelationIdFilter - <-- POST /api/products status=201 (321 ms)
+2026-08-22 07:52:54.427 [http-nio-8080-exec-4] INFO  [correlationId=5cfaddfd-7bdf-46ca-a004-ff9f443bb737] c.e.r.filter.CorrelationIdFilter - --> GET /api/products (client=0:0:0:0:0:0:0:1)
+2026-08-22 07:52:54.432 [http-nio-8080-exec-4] DEBUG [correlationId=5cfaddfd-7bdf-46ca-a004-ff9f443bb737] c.e.r.service.ProductServiceImpl - Fetching all products
+2026-08-22 07:52:54.445 [http-nio-8080-exec-4] DEBUG [correlationId=5cfaddfd-7bdf-46ca-a004-ff9f443bb737] c.e.r.service.ProductServiceImpl - Fetched 1 products
+2026-08-22 07:52:54.455 [http-nio-8080-exec-4] INFO  [correlationId=5cfaddfd-7bdf-46ca-a004-ff9f443bb737] c.e.r.filter.CorrelationIdFilter - <-- GET /api/products status=200 (28 ms)
+2026-08-22 10:21:46.966 [main] INFO  [correlationId=] c.example.restapi.RestApiApplication - Starting RestApiApplication using Java 26.0.2 with PID 28920 (D:\Documents\college_work\fullStack\exp1_5_2\backend\target\classes started by Anurag in D:\Documents\college_work\fullStack\exp1_5_2\backend)
+2026-08-22 10:21:46.969 [main] DEBUG [correlationId=] c.example.restapi.RestApiApplication - Running with Spring Boot v3.3.2, Spring v6.1.11
+2026-08-22 10:21:46.970 [main] INFO  [correlationId=] c.example.restapi.RestApiApplication - No active profile set, falling back to 1 default profile: "default"
+2026-08-22 10:21:47.480 [main] INFO  [correlationId=] o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-08-22 10:21:47.530 [main] INFO  [correlationId=] o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 41 ms. Found 1 JPA repository interface.
+2026-08-22 10:21:47.999 [main] INFO  [correlationId=] o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-08-22 10:21:48.010 [main] INFO  [correlationId=] o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-08-22 10:21:48.012 [main] INFO  [correlationId=] o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.26]
+2026-08-22 10:21:48.132 [main] INFO  [correlationId=] o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-08-22 10:21:48.133 [main] INFO  [correlationId=] o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1111 ms
+2026-08-22 10:21:48.161 [main] INFO  [correlationId=] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-08-22 10:21:48.309 [main] INFO  [correlationId=] com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:productdb user=SA
+2026-08-22 10:21:48.311 [main] INFO  [correlationId=] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-08-22 10:21:48.323 [main] INFO  [correlationId=] o.s.b.a.h.H2ConsoleAutoConfiguration - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:productdb'
+2026-08-22 10:21:48.421 [main] INFO  [correlationId=] o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-08-22 10:21:48.459 [main] INFO  [correlationId=] org.hibernate.Version - HHH000412: Hibernate ORM core version 6.5.2.Final
+2026-08-22 10:21:48.488 [main] INFO  [correlationId=] o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-08-22 10:21:48.772 [main] INFO  [correlationId=] o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-08-22 10:21:49.638 [main] INFO  [correlationId=] o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-08-22 10:21:49.731 [main] INFO  [correlationId=] o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-08-22 10:21:50.080 [main] WARN  [correlationId=] o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-08-22 10:21:50.595 [main] WARN  [correlationId=] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-08-22 10:21:50.597 [main] INFO  [correlationId=] o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-08-22 10:21:50.599 [main] INFO  [correlationId=] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-08-22 10:21:50.602 [main] INFO  [correlationId=] com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-08-22 10:21:50.623 [main] INFO  [correlationId=] o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-08-22 10:21:50.644 [main] ERROR [correlationId=] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
